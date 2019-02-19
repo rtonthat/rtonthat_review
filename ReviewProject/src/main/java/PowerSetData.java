@@ -86,15 +86,12 @@ public class PowerSetData {
         int[] copyOfMyArray = new int[myArray.length];
         System.arraycopy(
                 myArray, 0, copyOfMyArray, 0, myArray.length);
-
-        switch (choice) {
-        case 0 : {
-
+	    
+        if(case = 0) {
                     PowerSet.powerSetImplementation1(myArray);
-                    break;
-
                   }
-        case 1 : {
+	    
+        else if(case = 1) {
                     List<List<Integer>> ans = PowerSet.powerSetImplementation2(myArray);
 
                     for (List<Integer> item : ans) {
@@ -106,9 +103,9 @@ public class PowerSetData {
 
 
                     }
-                    break;
         }
-        case 2 : {
+	    
+        else if(case = 2) {
                     Set<Set<Integer>> ans = PowerSet.powerSetImplementation3(myArray);
 
                     for (Set<Integer> item : ans) {
@@ -119,11 +116,8 @@ public class PowerSetData {
                             System.out.print("] ");
 
                         }
-
-
-                            break;
                     }
-        default:
+        else {
             List<List<Integer>> ans = PowerSet.powerSetImplementation2(myArray);
 
                 for (List<Integer> item : ans) {
@@ -134,11 +128,8 @@ public class PowerSetData {
                         System.out.print("] ");
 
                     }
-
-                    break;
                 }
-
-        }
+	}
     }
 
 
